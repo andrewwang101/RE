@@ -17,7 +17,7 @@ TagManager:
   - MainBtn
   - PrefBG
   - PrefBtn
-  - 
+  - OpeningBG
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: PrefButton
     uniqueID: 419614727
+    locked: 0
+  - name: OpeningBG
+    uniqueID: 3316772245
     locked: 0

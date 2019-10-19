@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainFunc : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class MainFunc : MonoBehaviour
 
     public void StartGame()
     {
-
+        SceneManager.LoadScene("Opening");
     }
 
     public void Preference()
