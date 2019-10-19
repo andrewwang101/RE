@@ -10,6 +10,10 @@ public class TTCRoom : MonoBehaviour
     public GameObject[] CharOS = new GameObject[3];
     public int TTCindex = 0;
 
+    public GameObject TTCBtn;
+    public GameObject ClsTTCBtn;
+    public GameObject[] TTCResults = new GameObject[2];
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +22,35 @@ public class TTCRoom : MonoBehaviour
         {
             CharOS[i].SetActive(false);
         }
+
+        TTCBtn.SetActive(false);
+        ClsTTCBtn.SetActive(false);
+        for (int i = 0; i < 2; i++)
+        {
+            TTCResults[i].SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void OpenTTCPanel()
+    {
+        TTCBtn.SetActive(false);
+        TTCResults[TTCindex].SetActive(true);
+        if (TTCindex == 0) ClsTTCBtn.SetActive(true);
+        else StoryBtn.SetActive(true);
+    }
+
+    public void CloseTTCPanel()
+    {
+        ClsTTCBtn.SetActive(false);
+        TTCResults[TTCindex].SetActive(false);
+        StoryBtn.SetActive(true);
+        TTCindex = 1;
     }
 
     public void CmdMainStory()
@@ -37,7 +64,8 @@ public class TTCRoom : MonoBehaviour
 
             case 7:
                 CharOS[0].SetActive(false);
-                //StoryBtn.SetActive(false);//去和物品互動
+                StoryBtn.SetActive(false);//去和物品互動
+                TTCBtn.SetActive(true);
                 break;
 
             case 8://這顆衛星看起來有GNSS喔
@@ -46,7 +74,8 @@ public class TTCRoom : MonoBehaviour
 
             case 9:
                 CharOS[1].SetActive(false);
-                //StoryBtn.SetActive(false);//去和物品互動
+                StoryBtn.SetActive(false);//去和物品互動
+                TTCBtn.SetActive(true);
                 break;
 
             case 10://喔喔???
