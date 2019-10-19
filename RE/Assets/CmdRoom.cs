@@ -58,6 +58,28 @@ public class CmdRoom : MonoBehaviour
                 StoryBtn.SetActive(false);
                 SceneManager.LoadScene("TTCRoom");
                 break;
+
+            case 12://有訊號!!!
+                CharOS[4].SetActive(true);
+                break;
+
+            case 13://能大概定位了
+                CharOS[4].SetActive(false);
+                CharOS[5].SetActive(true);
+                break;
+
+            case 14://資料似乎...
+                CharOS[5].SetActive(false);
+                CharOS[6].SetActive(true);
+                break;
+
+            case 15://To Be Continue...
+                CharOS[6].SetActive(false);
+                break;
+            case 16://Back to Main Menu
+                SceneManager.LoadScene("MainScene");
+                break;
+
             default:
                 BtnCount--;
                 break;
