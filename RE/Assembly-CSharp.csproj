@@ -56,6 +56,7 @@
      <Compile Include="Assets\CmdRoom.cs" />
      <Compile Include="Assets\MainFunc.cs" />
      <Compile Include="Assets\OpeningTrans.cs" />
+     <Compile Include="Assets\TTCRoom.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/DATA/2019 NASA Hackerthon/RE/RE/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

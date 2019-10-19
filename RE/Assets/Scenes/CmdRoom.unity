@@ -870,13 +870,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8bc4dccb0f553f4e93394af0886bf3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StoryBtn: {fileID: 0}
+  StoryBtn: {fileID: 954949079}
   CharOS:
   - {fileID: 1599772743}
   - {fileID: 31231442}
   - {fileID: 416246014}
   - {fileID: 174188791}
-  BtnCount: -1
+  - {fileID: 174188791}
+  - {fileID: 174188791}
+  - {fileID: 174188791}
 --- !u!1 &2106171463
 GameObject:
   m_ObjectHideFlags: 0

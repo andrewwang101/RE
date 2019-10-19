@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class CmdRoom : MonoBehaviour
 {
     public GameObject StoryBtn;
-    public GameObject[] CharOS = new GameObject[4];
-    public int BtnCount = -1;
+    public GameObject[] CharOS = new GameObject[7];
+    public static int BtnCount = -1;
 
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0;i < 4; i++)
+        for(int i = 0;i < 7; i++)
         {
             CharOS[i].SetActive(false);
         }
@@ -55,9 +55,11 @@ public class CmdRoom : MonoBehaviour
 
             case 5:
                 CharOS[3].SetActive(false);
+                StoryBtn.SetActive(false);
                 SceneManager.LoadScene("TTCRoom");
                 break;
             default:
+                BtnCount--;
                 break;
         }
     }
