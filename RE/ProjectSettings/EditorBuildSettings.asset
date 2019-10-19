@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CmdRoom.unity
     guid: 153775a19c195d647bb8a3cd4b3ceff8
+  - enabled: 1
+    path: Assets/Scenes/TTCRoom.unity
+    guid: db3216fb71d9f8f4f8e0dc74c485ed67
   m_configObjects: {}

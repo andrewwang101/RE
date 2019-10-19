@@ -56,6 +56,9 @@ TagManager:
   - name: OpeningBG
     uniqueID: 3316772245
     locked: 0
+  - name: TTC
+    uniqueID: 3575574697
+    locked: 0
   - name: StoryOS
     uniqueID: 3634755901
     locked: 0
