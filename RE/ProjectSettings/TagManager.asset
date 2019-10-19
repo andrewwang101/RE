@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - MainBG
+  - MainBtn
+  - PrefBG
+  - PrefBtn
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: MainBG
+    uniqueID: 4229609539
+    locked: 0
+  - name: MainButton
+    uniqueID: 542115231
+    locked: 0
+  - name: PrefBG
+    uniqueID: 2570235421
+    locked: 0
+  - name: PrefButton
+    uniqueID: 419614727
     locked: 0
