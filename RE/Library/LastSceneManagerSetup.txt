@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CmdRoom.unity
+- path: Assets/Scenes/TTCRoom.unity
   isLoaded: 1
   isActive: 1
