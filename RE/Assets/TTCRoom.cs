@@ -14,6 +14,11 @@ public class TTCRoom : MonoBehaviour
     public GameObject ClsTTCBtn;
     public GameObject[] TTCResults = new GameObject[2];
 
+    public GameObject[] MovingView = new GameObject[2];
+    public GameObject LookLeftBtn;
+    public GameObject LookRightBtn;
+    public int dir = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +39,62 @@ public class TTCRoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (dir == -1)
+        {
+            Vector3 NewPos = MovingView[0].transform.position + new Vector3(0.3f, 0, 0);
+            if (NewPos.x <= 5)
+            {
+                for (int i = 0; i < 2; i++) MovingView[i].transform.position += new Vector3(0.3f, 0, 0);
+            }
+        }
+        if(dir == 1)
+        {
+            Vector3 NewPos = MovingView[0].transform.position - new Vector3(0.3f, 0, 0);
+            if (NewPos.x >= -5)
+            {
+                for (int i = 0; i < 2; i++) MovingView[i].transform.position -= new Vector3(0.3f, 0, 0);
+            }
+        }
     }
 
+    public void GoLeft()
+    {
+        dir = -1;
+    }
+
+    public void GoRight()
+    {
+        dir = 1;
+    }
+
+    public void LeftStop()
+    {
+        dir = 0;
+    }
+
+    public void RightStop()
+    {
+        dir = 0;
+    }
+    /*
+    public void LookLeft()
+    {
+        for(int i=0;i<2;i++)
+        {
+            Vector3 NewPos = MovingView[i].transform.position += new Vector3(1, 0, 0);
+            
+        }
+    }
+
+    public void LookRight()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            Vector3 NewPos = MovingView[i].transform.position -= new Vector3(1, 0, 0);
+            
+        }
+    }
+    */
     public void OpenTTCPanel()
     {
         TTCBtn.SetActive(false);
