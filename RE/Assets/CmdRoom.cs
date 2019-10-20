@@ -77,7 +77,7 @@ public class CmdRoom : MonoBehaviour
                 CharOS[6].SetActive(false);
                 break;
             case 16://Back to Main Menu
-                SceneManager.LoadScene("MainScene");
+                SceneManager.LoadScene("TobeContinue");
                 break;
 
             default:

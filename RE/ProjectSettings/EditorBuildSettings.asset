@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TTCRoom.unity
     guid: db3216fb71d9f8f4f8e0dc74c485ed67
+  - enabled: 1
+    path: Assets/Scenes/TobeContinue.unity
+    guid: 06e1e9b47d885fa458d097b4361c8b87
   m_configObjects: {}

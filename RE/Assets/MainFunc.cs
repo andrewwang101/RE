@@ -28,7 +28,7 @@ public class MainFunc : MonoBehaviour
         //VolUpButton.SetActive(false);
         //VolDownButton.SetActive(false);
         BackButton.SetActive(false);
-
+        CmdRoom.BtnCount = 0;
         Pref_Page.SetActive(false);
     }
 
